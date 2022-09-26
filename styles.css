@@ -165,11 +165,11 @@ ul {
 
     .nav-toggle {
         display: flex;
-        align-items: center;
         font-size: 23px;
         cursor: pointer;
         margin-right: 2rem;
         margin-top: 1.2rem;
+        align-items: center;
         background: transparent;
         color: var(--clr-light);
         border-color: transparent;
