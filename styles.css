@@ -1,0 +1,164 @@
+
+:root {
+    --clr-nav: rgb(255, 255, 255);
+    --clr-light: rgb(54, 164, 179);
+    --clr-darkhover: rgb(50, 122, 122);
+    --clr-background: rgb(218, 242, 245);
+    --clr-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* EDIT THIS PART*/
+.middle {
+    height: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 80%;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+}
+/* EDIT THIS PART*/
+
+body {
+    height: 100vh;
+    color: var(--clr-darkhover);
+    background-color: var(--clr-background);
+}
+
+.nav-center {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    box-shadow: var(--clr-shadow);
+    justify-content: space-between;
+    background-color: var(--clr-nav);
+}
+
+.nav-header {
+    margin-left: 3rem;
+}
+
+.logo {
+    width: 90px;
+    margin-left: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+ul {
+    display: flex;
+    margin: 1.3rem;
+    margin-right: -19px;
+    align-items: center;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.toggle {
+    margin-right: -1rem;
+}
+
+.toggle a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    color: var(--clr-light);
+    font-family: 'Arvo', serif;
+}
+
+.toggle a:hover {
+    color: var(--clr-darkhover);
+}
+
+.social-icons {
+    margin-right: 4rem;
+    margin-top: 1.7rem;
+}
+
+.social-icons li a {
+    padding-left: 14px;
+    color: var(--clr-light);
+}
+
+.social-icons li a:hover {
+    color: var(--clr-darkhover);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        margin-left: -1rem;
+    }
+
+    .toggle {
+        display: none;
+        text-align: center;
+        margin-left: -5rem;
+        padding-top: 3.8rem;
+    }
+
+    /* INSERT CLASS TO HIDE TOGGLE BAR */
+    .links {
+        display: block;
+    }
+    /* INSERT CLASS TO HIDE TOGGLE BAR */
+
+    
+    .toggle li {
+        padding-top: 0.5rem;
+        transition: all 0.3s linear;
+    }
+
+    .toggle li:hover {
+        padding-left: 1.5rem;
+    }
+
+    .social-icons{
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 2rem;
+        margin-top: 1.2rem;
+        background: transparent;
+        color: var(--clr-light);
+        border-color: transparent;
+        transition: all 0.3s linear;
+    }
+
+    .nav-toggle:hover {
+        transform: rotate(90deg);
+    }
+}
+
